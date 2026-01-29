@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Link al archivo de estilos CSS-->
+    <link rel="stylesheet" href="\2-Estilos\styles.css" />
+</head>
+<body>
+    <header class="headerppal">
+        <h1>Header - Logo - titulo - opciones de sesion</h1>
+    </header>  
+    <nav class="navppal">
+        <h1>Nav - Menu ppal de navegacion </h1>
+        <button class="botonesmenu" onclick="location.href='menuppal.html'">
+            Menu ppal
+        </button>
+    </nav>
+    <aside class="asideppal">
+        <h1>Aside - contenido adicional o relacionado - publicidad - favoritos - Opciones de registro </h1>
+    </aside>
+    
+    <main class="mainppal">
+        <!--
+        <h1>Main - contenido ppal excluyendo encabezados, pie de pagina y laterales </h1>     
+        -->
+        <section class="sectionppal">
+            <h1>Section - divisiones entre el contenido ppal - Maestro - Varios contenidos de un mismo tipo</h1>
+        </section>   
+        <article class="articleppal">
+            <h1>Article - divisiones entre el contenido ppal - Detalle - Varios contenidos de un mismo tipo</h1>
+        </article>
+
+    </main> 
+
+    <footer class="footerppal">
+        <h1>Footer - Info de contacto - paginacion - derechos de autor</h1>
+    </footer>   
+    
+<!--   CODIGO CSS POR SI LO MODIFICO EN EL CAMINO
+
+/*------------------------ARRIBA IZQ------------------------------------*/
+
+/*Clases de la estructura (SEMANTICA RESPONSIVE)*/
+/*siempre arriba con tamaño %*/
+.headerppal {
+  border-radius: 10px;
+  background-color: darkcyan;
+  
+  /*siempre arriba*/ 
+  position: absolute;
+  top: 1%;
+
+  /*Tamaño %*/
+  height: 15%;
+  width: 99%;
+  right: 5px;
+}
+/*Izquierda pantalla - arriba celular y ocultable*/
+.navppal {
+  border-radius: 10px;
+  background-color: rgb(120, 71, 139);
+
+  /*siempre derecha (si cel -> arriba bajo el header)*/ 
+  position: absolute;
+  width: 18.5%;
+  top: 17%;
+  bottom: 17%;
+}
+
+/*-------------------------CENTRO-----------------------------------*/
+
+/*Siempre centro y mayoria de tamaño con scroll*/
+.mainppal {
+  border-radius: 10px;
+  background-color: chocolate;
+
+  /*position central */
+  position: absolute;
+  bottom: 17%;
+  top: 17%;
+  left: 20%;
+  right: 20%;
+
+}
+.sectionppal {
+  border-radius: 10px;
+  background-color: burlywood;
+
+  height: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.articleppal {
+  border-radius: 10px;
+  background-color:cadetblue;
+
+  height: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*-----------------------ABAJO DER-------------------------------------*/
+
+/*Derecha pantalla - abajo en celular y ocultable*/
+.asideppal {
+  border-radius: 10px;
+  background-color:rgb(120, 71, 139);
+
+  /*siempre derecha (si cel -> abajo sobre el footer)*/ 
+  position: absolute;
+  width: 19%;
+  top: 17%;
+  bottom: 17%;
+  right: 5px;
+}
+/*siempre abajo con tamaño%*/
+.footerppal {
+  border-radius: 10px;
+  background-color: darkcyan;
+
+  /*siempre abajo */
+  position: absolute;
+  bottom: 1%;
+
+  /*con tamaño % */
+  width: 99%;
+  right: 5px;
+  height: 15%;
+  /*padding: 20px;*/
+}
+/*------------------------------------------------------------*/    
+-->    
+
+
+
+</body>
+</html>

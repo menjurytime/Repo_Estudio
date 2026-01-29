@@ -1,0 +1,241 @@
+/*Con responsive (media query) se hace menu hamburguesa y menu vertical segun tamaño pantalla*/
+/*para esto se explica en un video del curso Paso 21 barra de navegacion*/
+
+
+/*ESTILO DE ICONOS*/
+.icono{
+  height: 25 px;
+  width: 50 px;
+  margin-top: 10px;
+  margin: 10%;
+  margin-left: 10px;
+}
+
+.contenedor{
+  margin-top: 250px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 3%;
+  border: 3px solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: darkcyan;  
+}
+
+.contenedor-centrado{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 10px solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: ghostwhite;  
+}
+
+/*Cajas de texto sin fondo y sin borde*/
+input{
+  width: 96%;
+  margin: 5px;  
+  margin-left: 8px;
+  background: none;
+  border: none;
+}
+
+/*Botones*/
+.botonesmenu{
+ /* height: 35px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 3px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  background-color: rgb(202, 125, 125); 
+  border: none;
+*/
+border-radius: 10px;
+  background-color: rgb(202, 125, 125); 
+  border: none;
+}
+
+/*boton de menu hamburguesa para que sea fondo igual*/
+.btnimagen{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.btnimagen:hover {
+  border-color: blue;
+  background: rgb(202, 125, 125);
+}
+.btnimagen:active {
+  border-color: red;
+  background: pink;
+}
+.btnimagen:focus {
+  outline: none;
+  box-shadow: 0 0 5px blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------ARRIBA IZQ------------------------------------*/
+
+/*Clases de la estructura (SEMANTICA RESPONSIVE)*/
+/*siempre arriba con tamaño %*/
+.headerppal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  border-radius: 10px;
+  background-color: rgb(128, 34, 34);
+  
+  /*siempre arriba*/ 
+  position: absolute;
+  top: 1%;
+
+  /*Tamaño %*/
+  height: 15%;
+  width: 99%;
+  right: 5px;
+
+
+
+}
+/*Izquierda pantalla - arriba celular y ocultable*/
+.navppal {
+  border-radius: 10px;
+  background-color: rgb(180, 56, 56);
+
+  /*siempre derecha (si cel -> arriba bajo el header)*/ 
+  position: absolute;
+  width: 18.5%;
+  top: 17%;
+  bottom: 17%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+ 
+}
+
+  /*ocultar en boton si celular*/
+ /* @media (min-width: 200px) {
+    .navppal {
+
+    display: none;
+    }*/
+
+/*-------------------------CENTRO-----------------------------------*/
+
+/*Siempre centro y mayoria de tamaño con scroll*/
+.mainppal {
+  border-radius: 10px;
+  background-color: chocolate;
+
+  /*position central */
+  position: absolute;
+  bottom: 17%;
+  top: 17%;
+  left: 20%;
+  right: 20%;
+
+}
+.sectionppal {
+  border-radius: 10px;
+  background-color: burlywood;
+
+  height: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.articleppal {
+  border-radius: 10px;
+  background-color:burlywood;
+
+  height: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*-----------------------ABAJO DER-------------------------------------*/
+
+/*Derecha pantalla - abajo en celular y ocultable*/
+.asideppal {
+  border-radius: 10px;
+  background-color: rgb(180, 56, 56);
+
+  /*siempre derecha (si cel -> abajo sobre el footer)*/ 
+  position: absolute;
+  width: 19%;
+  top: 17%;
+  bottom: 17%;
+  right: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+/*siempre abajo con tamaño%*/
+.footerppal {
+  border-radius: 10px;
+  background-color: rgb(128, 34, 34);
+
+  /*siempre abajo */
+  position: absolute;
+  bottom: 1%;
+
+  /*con tamaño % */
+  width: 99%;
+  right: 5px;
+  height: 15%;
+  /*padding: 20px;*/
+}
+/*------------------------------------------------------------*/
